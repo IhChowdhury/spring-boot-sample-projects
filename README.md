@@ -1,7 +1,7 @@
-## spring-boot-sample-projects
-This repository has some sample spring boot solutions. You can find different solutions based on problem in he different branch section. Hope this will help you for your development career.
+## Spring Boot : Sample Rest Api
+I have tried to create basic rest api using spring boot.
 
-> Porject Information
+> Project Information
 - Java Version: JDK 17
 - Spring Boot: 3.1.0
 - Packaging: War
