@@ -1,5 +1,5 @@
-## Spring Boot : Sample Rest Api
-I have tried to create basic rest api using spring boot.
+## Spring Boot : Sample Rest Api With Spring Security
+This branch is about to implement Spring Security for Rest Api
 
 > Project Information
 - Java Version: JDK 17
