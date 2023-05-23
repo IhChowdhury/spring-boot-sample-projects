@@ -5,3 +5,8 @@ This repository has some sample spring boot solutions. You can find different so
 - Java Version: JDK 17
 - Spring Boot: 3.1.0
 - Packaging: War
+
+## Project index
+|Project Name| Project Link |
+|--|--|
+| Sample Rest API | https://github.com/IhChowdhury/spring-boot-sample-projects/tree/sample-rest-api |
