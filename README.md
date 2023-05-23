@@ -6,6 +6,11 @@ This repository has some sample spring boot solutions. You can find different so
 - Spring Boot: 3.1.0
 - Packaging: War
 
+## Git Branch Tree
+- master
+- sample-rest-api
+  - sample-rest-api-with-spring-security
+
 ## Project index
 |Project Name| Project Link |
 |--|--|
