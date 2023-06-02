@@ -15,3 +15,4 @@ This repository has some sample spring boot solutions. You can find different so
 |Project Name| Project Link |
 |--|--|
 | Sample Rest API | https://github.com/IhChowdhury/spring-boot-sample-projects/tree/sample-rest-api |
+| Sample Rest API With Spring Security | https://github.com/IhChowdhury/spring-boot-sample-projects/tree/sample-rest-api-with-spring-security |
