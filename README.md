@@ -1,5 +1,5 @@
 ## Spring Boot : Sample Rest Api With Spring Security
-This branch is about to implement Spring Security for Rest Api
+This branch is about to implement Spring Security for Rest Api. I have add Basic Authentication in this branch.
 
 > Project Information
 - Java Version: JDK 17
