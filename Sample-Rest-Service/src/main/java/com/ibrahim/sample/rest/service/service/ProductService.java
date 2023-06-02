@@ -11,13 +11,13 @@ import java.util.UUID;
 
 @Service
 public class ProductService {
-    private List<Product> productList = new ArrayList<>();
+    private final List<Product> productList = new ArrayList<>();
 
-    public List<Product> getAllProducts(){
+    public List<Product> getAllProducts() {
         return productList;
     }
 
-    public Product addNewProduct(String name, String category, Double price){
+    public Product addNewProduct(String name, String category, Double price) {
         Product newProduct = new Product(name, category, price);
         productList.add(newProduct);
         return newProduct;
@@ -25,7 +25,7 @@ public class ProductService {
 
     public Product getProductById(UUID productId) throws ResourceNotFoundException {
         Optional<Product> searchedProduct = productList.stream().filter(product -> product.getId().equals(productId)).findFirst();
-        if(searchedProduct.isPresent()){
+        if (searchedProduct.isPresent()) {
             return searchedProduct.get();
         }
         throw new ResourceNotFoundException(String.format("Product not found using product Id %s", productId));

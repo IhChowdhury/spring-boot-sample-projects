@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus;
 public class SuccessResponse extends ApiResponse {
     private Object result;
 
-    public SuccessResponse(HttpStatus status){
+    public SuccessResponse(HttpStatus status) {
         super(status);
     }
 }

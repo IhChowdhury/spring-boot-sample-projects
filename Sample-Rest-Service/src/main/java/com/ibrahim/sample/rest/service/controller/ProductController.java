@@ -27,7 +27,7 @@ public class ProductController {
     private final ProductService productService;
 
     @PostMapping
-    public ResponseEntity<ApiResponse> addNewProduct(@RequestBody NewProductRequest product){
+    public ResponseEntity<ApiResponse> addNewProduct(@RequestBody NewProductRequest product) {
         Product newProduct = productService.addNewProduct(product.getProductName(), product.getProductCategory(),
                 product.getProductPrice());
         SuccessResponse successResponse = new SuccessResponse(HttpStatus.OK);
@@ -36,14 +36,14 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<ApiResponse> getAllProducts(){
+    public ResponseEntity<ApiResponse> getAllProducts() {
         SuccessResponse successResponse = new SuccessResponse(HttpStatus.OK);
         successResponse.setResult(productService.getAllProducts());
         return ResponseEntity.ok(successResponse);
     }
 
     @GetMapping("/{productId}")
-    public ResponseEntity<ApiResponse> getProductById(@PathVariable(name = "productId")UUID productId){
+    public ResponseEntity<ApiResponse> getProductById(@PathVariable(name = "productId") UUID productId) {
         try {
             Product product = productService.getProductById(productId);
             SuccessResponse successResponse = new SuccessResponse(HttpStatus.OK);
