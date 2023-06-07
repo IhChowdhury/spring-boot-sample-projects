@@ -1,9 +1,11 @@
 package com.ibrahim.sample.rest.service.configuration;
 
+import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
+import io.swagger.v3.oas.models.security.SecurityScheme;
 import io.swagger.v3.oas.models.servers.Server;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -28,7 +30,18 @@ public class OpenAPIConfig {
     public OpenAPI openAPI() {
         Server devServer = getServer();
         Info info = getInfo();
-        return new OpenAPI().info(info).servers(List.of(devServer));
+        return new OpenAPI()
+                .components(new Components()
+                        .addSecuritySchemes("basicScheme",securityScheme()))
+                .info(info).servers(List.of(devServer));
+    }
+
+    public SecurityScheme securityScheme(){
+        return new SecurityScheme()
+                .name("basicSecurity")
+                .scheme("basic")
+                .type(SecurityScheme.Type.HTTP)
+                .in(SecurityScheme.In.HEADER);
     }
 
     private Info getInfo() {
