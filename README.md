@@ -6,14 +6,19 @@ This repository has some sample spring boot solutions. You can find different so
 - Spring Boot: 3.1.0
 - Packaging: War
 
-```mermaid
----
-title: Branch Flow
----
-flowchart LR
-  master --> simple-rest-api
-  simple-rest-api --> simple-rest-api-with-spring-securty
-```
+<details>
+  <summary>Click to see Branch Flow</summary>
+  
+  ```mermaid
+  ---
+  title: Branch Flow
+  ---
+  flowchart LR
+    master --> simple-rest-api
+    simple-rest-api --> simple-rest-api-with-spring-securty
+  ```
+</details>
+
 
 ## Project index
 |Project Name| Project Link |
