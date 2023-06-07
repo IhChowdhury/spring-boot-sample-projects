@@ -6,10 +6,14 @@ This repository has some sample spring boot solutions. You can find different so
 - Spring Boot: 3.1.0
 - Packaging: War
 
-## Git Branch Tree
-- master
-- sample-rest-api
-  - sample-rest-api-with-spring-security
+```mermaid
+---
+title: Branch Flow
+---
+flowchart LR
+  master --> simple-rest-api
+  simple-rest-api --> simple-rest-api-with-spring-securty
+```
 
 ## Project index
 |Project Name| Project Link |
