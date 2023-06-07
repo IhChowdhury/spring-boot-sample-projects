@@ -11,16 +11,16 @@ import java.util.UUID;
 
 @Service
 public class ProductService {
-    private List<Product> productList = new ArrayList<>();
+    private final List<Product> productList = new ArrayList<>();
 
     public List<Product> getAllProducts(){
         return productList;
     }
 
-    public Product addNewProduct(String name, String category, Double price){
+    public UUID addNewProduct(String name, String category, Double price){
         Product newProduct = new Product(name, category, price);
         productList.add(newProduct);
-        return newProduct;
+        return newProduct.getId();
     }
 
     public Product getProductById(UUID productId) throws ResourceNotFoundException {
